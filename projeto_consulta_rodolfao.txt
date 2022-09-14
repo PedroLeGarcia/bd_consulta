@@ -1,0 +1,24 @@
+use profro26_biblioteca;
+
+SELECT * FROM livro 
+WHERE titulo like "%%";
+
+SELECT * FROM livro
+WHERE titulo and sinopse like "%%";
+
+SELECT * FROM livro
+WHERE id_genero like "%%";
+
+SELECT * FROM livro
+WHERE titulo and sinopse and id_genero like "%%"; 
+
+SELECT * FROM autor_livro
+WHERE id_autor like "%%";
+
+SELECT * FROM livro 
+WHERE titulo and sinopse and id_autor;
+
+SELECT * FROM livro
+WHERE titulo and sinopse and id_genero and id_autor;
+
+
